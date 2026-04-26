@@ -1,0 +1,166 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* MAIN CARD */
+.main {
+    margin-top: 40px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    width: 750px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* HEADER */
+#head {
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+/* INPUT ROW */
+.input-row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+input, select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    width: 150px;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #ee0979;
+    box-shadow: 0 0 8px rgba(238, 9, 121, 0.5);
+}
+
+/* BUTTON */
+button {
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #5b86e5, #36d1dc);
+}
+
+/* TASK LIST */
+#taskList {
+    margin-top: 20px;
+}
+
+/* TASK CARD */
+.task {
+    background: #ffffff;
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 15px;
+    width: 90%;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    text-align: left;
+    transition: 0.3s;
+    position: relative;
+}
+
+.task:hover {
+    transform: translateY(-5px);
+}
+
+/* CATEGORY COLORS (LEFT BORDER + GLOW) */
+.study {
+    border-left: 6px solid #3b82f6;
+}
+
+.work {
+    border-left: 6px solid #f97316;
+}
+
+.personal {
+    border-left: 6px solid #22c55e;
+}
+
+/* COMPLETED TASK */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+    background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+}
+
+/* TASK BUTTONS */
+.task button {
+    margin-top: 10px;
+    margin-right: 8px;
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+/* DASHBOARD */
+.dashboard {
+    margin-top: 25px;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    padding: 18px;
+    border-radius: 15px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.dashboard p {
+    margin: 6px 0;
+    font-weight: 600;
+    color: #333;
+}
+/* PRIORITY BADGES */
+.priority {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.high {
+    background: #fecaca;
+    color: #b91c1c;
+}
+
+.medium {
+    background: #fde68a;
+    color: #92400e;
+}
+
+.low {
+    background: #bbf7d0;
+    color: #065f46;
+}

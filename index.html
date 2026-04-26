@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart task planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+    
+    <!-- HEADER -->
+    <div id="head">
+        <h1>Smart task planner</h1>
+    </div>
+
+    <!-- INPUT ROW -->
+    <div class="input-row">
+        <input type="text" id="taskName" placeholder="Enter task">
+        <input type="date" id="dueDate">
+
+        <select id="category">
+            <option>Study</option>
+            <option>Work</option>
+            <option>Personal</option>
+        </select>
+
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <!-- TASK LIST -->
+    <div id="taskList"></div>
+    <div class="dashboard">
+    <p>Total Tasks: <span id="total">0</span></p>
+    <p>Completed: <span id="completed">0</span></p>
+    <p>Pending: <span id="pending">0</span></p>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
